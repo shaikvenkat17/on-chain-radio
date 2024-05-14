@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-grad-1: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  --bg-grad-2: linear-gradient(
+    109.6deg,
+    rgb(20, 30, 48) 11.2%,
+    rgb(36, 59, 85) 91.1%
+  );
+}
+
+body {
+  background: var(--bg-grad-1);
+  min-height: 100vh;
+  color: white;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+}
+
+.pageSection {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff2;
+}
+.pageBody {
+  padding: 20px 20%;
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+}
+
+/* -------------------------- Audio Upload Form -------------------------- */
+.myUploadAudioForm {
+  background-color: #fff2;
+  flex-direction: column;
+  display: flex;
+  border-radius: 20px;
+  padding: 30px 50px;
+  font-size: 18px;
+  gap: 25px;
+}
+.myUploadAudioForm h1 {
+  font-size: 30px;
+}
+.myUploadAudioForm input[type='number'] {
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  outline: none;
+  padding: 10px;
+  width: 45%;
+}
+.myUploadAudioForm input[type='text'] {
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  outline: none;
+  padding: 10px;
+}
+
+.myUploadAudioForm select,
+input[type='datetime-local'] {
+  background-color: #0004;
+  padding: 8px 12px;
+  outline-color: white;
+  width: 100%;
+}
+
+.myUploadAudioForm option {
+  background-color: #0009;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.myUploadAudioForm * {
+  outline-color: white;
+}
+
+.myUploadAudioForm input[type='file']::file-selector-button {
+  background-color: #fff5;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+.myUploadAudioForm .inputDiv {
+  align-items: center;
+  font-size: 20px;
+  display: flex;
+  width: 60%;
+  gap: 20px;
+}
+
+.myUploadAudioForm label {
+  white-space: nowrap;
+}
+
+.myUploadAudioForm button[type='submit'] {
+  background-color: #fff5;
+  white-space: nowrap;
+  align-self: center;
+  padding: 7px 30px;
+  font-size: 20px;
+  border-radius: 7px;
+}
+
+.rhap_play-status--paused .rhap_current-time, .rhap_play-status--playing .rhap_current-time {
+  color: white;
+}
